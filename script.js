@@ -40,6 +40,14 @@ function submitForm() {
         return;
     }
 
+    if (apartmentField && apartmentField.disabled == false) {
+        var apartmentNumber = parseInt(apartment);
+        if (apartmentNumber < 1) {
+            alert("Неверный номер квартиры!");
+            return;
+        }
+    }
+
     var outputForm = document.getElementById("output-form");
     var streetLabel;
         if (streetType == "ул") {
