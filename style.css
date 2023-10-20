@@ -1,0 +1,11 @@
+#input-form, #output-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+h1 {
+  position: relative;
+  text-align: center;
+}

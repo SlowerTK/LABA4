@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторная работа №5</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h1>Почтовый адрес</h1>
+    <form id="input-form">
+        <label for="street">Улица:</label>
+        <input type="text" id="street" name="street"><br><br>
+        <label for="house">Дом:</label>
+        <input type="number" id="house" name="house">
+        <label for="private-house">Частный дом</label>
+        <input type="checkbox" id="private-house" name="private-house" onchange="toggleApartmentField()"><br><br>
+        <label for="apartment">Квартира:</label>
+        <input type="number" id="apartment" name="apartment"><br><br>
+        <button type="button" onclick="submitForm()">Отправить</button>
+    </form>
+    <form id="output-form">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
