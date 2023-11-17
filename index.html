@@ -10,11 +10,11 @@
         <label for="street">Улица:</label>
         <input type="text" id="street" name="street"><br><br>
         <label for="house">Дом:</label>
-        <input type="number" id="house" name="house">
+        <input type="number" id="house" name="house" min="1">
         <label for="private-house">Частный дом</label>
         <input type="checkbox" id="private-house" name="private-house" onchange="toggleApartmentField()"><br><br>
         <label for="apartment">Квартира:</label>
-        <input type="number" id="apartment" name="apartment"><br><br>
+        <input type="number" id="apartment" name="apartment" min="1"><br><br>
         <button type="button" onclick="submitForm()">Отправить</button>
     </form>
     <form id="output-form">

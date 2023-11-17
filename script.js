@@ -20,17 +20,17 @@ function submitForm() {
     var streetType = street.substring(0, street.indexOf(" "));
     var houseNumber = parseInt(house);
 
-    if (streetType == "ул") {
+    if (streetType == "ул" || streetType == "ул.") {
         if (houseNumber < 1 || houseNumber > 100) {
             alert("Неверный номер дома!");
             return;
         }
-    } else if (streetType == "пр") {
+    } else if (streetType == "пр" || streetType == "пр.") {
         if (houseNumber < 1 || houseNumber > 1000) {
             alert("Неверный номер дома!");
             return;
         }
-    } else if (streetType == "пер") {
+    } else if (streetType == "пер" || streetType == "пер.") {
         if (houseNumber < 1 || houseNumber > 30) {
             alert("Неверный номер дома!");
             return;
